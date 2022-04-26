@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg-color: hsl(210, 36%, 96%);
+  --light-black: hsl(209, 61%, 16%);
+  --white: #fff;
+  --harsh: hsl(212, 33%, 89%);
+  --light-grey: hsl(210, 22%, 49%);
+}
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: var(--bg-color);
+}
+#wrapper {
+  height: 100vh;
+
+  margin: 4rem auto;
+}
+.heading {
+  text-align: center;
+}
+.heading h1 {
+  color: var(--light-black);
+  font-size: 60px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.heading p {
+  font-size: 18px;
+  color: var(--light-grey);
+  margin-bottom: 3rem;
+}
+.containImage {
+  margin: auto;
+  gap: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+.image {
+  background-image: url(./hero-bcg.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 45%;
+  border-radius: 8px;
+  background-color: yellow;
+}
+.text-tab-top {
+  border-radius: 8px;
+  width: 45%;
+  /* height: 350px; */
+  /* padding: 9rem; */
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 0px solid white;
+}
+
+.text-tab-top li {
+  list-style: none;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  font-size: 20px;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+.tab-content {
+  margin: 0;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* background-color: pink; */
+}
+
+.tab-content li {
+  width: 33.3%;
+  align-items: center;
+  justify-content: center;
+}
+.tab-content li:hover {
+  color: #49a6e9;
+  background-color: hsl(205, 100%, 96%);
+}
+.tab-content li.active {
+  background-color: #fff;
+}
+.text-tab-bottom {
+  /* height: 290px; */
+  margin: 1rem 2rem;
+  background-color: #fff;
+}
+.text-tab-bottom h3 {
+  letter-spacing: 3px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.text-tab-bottom p {
+  color: var(--light-grey);
+  line-height: 25px;
+  font-size: 18px;
+}
+/* @media (max-width: 600px) {
+  .image {
+    width: 90%;
+  }
+  .text-tab-top {
+    width: 90%;
+  }
+} */
